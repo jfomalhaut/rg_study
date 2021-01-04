@@ -1,0 +1,27 @@
+<html>
+<head>
+	<style>
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: darkolivegreen;
+			margin: 0 auto 0 auto; 
+			display: inline-block;
+			visibility: hidden; /* 빈자리가 남아있다. */
+			/* 북동남서 */
+
+			/* block : 가로 영역이 100%가 된다.
+				inline : 풍선과 같다. 내용물이 없으면 형태를 유지할 수 없다 (width, height 무용)
+				inline-block : block과 inilne의 중간 형태로, 형태는 유지하되 margin은 사라진다.
+			*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<span>다음</span>
+</body>
+</html>

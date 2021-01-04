@@ -8,3 +8,37 @@ ul, li
 input
 select
 textarea
+
+
+3 ~ 4일차 [HTML] - [CSS]
+media query
+animation
+transition
+tranform
+
+주 하루 2시간 * 5
+40시간 * 2달
+
+80시간
+
+JavaScript
+slide만들기,
+json => return 함수 형태로 출력
+
+function print() {
+	return `
+		<div>
+
+		</div>
+	`;
+}
+
+var abcd = document.getElementById('abcd');
+abcd.innerHTML = print();
+
+1시간~ 2시간
+
+[react] 6~8회, 개발환경 redux, redux-saga => nodejs + aws 
+hook, functinal component
+
+class => function + typescript
