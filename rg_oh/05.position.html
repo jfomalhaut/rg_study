@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /** 무슨 요소든 간에 높이는 다 inline임
+        자연적으로 늘어나게 하는게 좋음
+             */
+        .container {
+            width: 800px;
+            height: 500px;
+            margin: 200px auto;
+            background: beige;
+            border: 2px solid #000;
+            /** .box의 기준점을 주기 위해 relative 속성을 주게 됨 */
+            position: relative;
+        }
+
+        .box1 {
+            position: absolute;
+            /* position: absolute는 둘 중 하나의 세트와 같이 감 */
+            left: 0;
+            top: 0;
+            /*bottom: 0;*/
+            /*right: 0;*/
+            background: #444;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box2 {
+            position: absolute;
+            /* position: absolute는 둘 중 하나의 세트와 같이 감 */
+            /*left: 0;*/
+            /*top: 0;*/
+            bottom: -50px;
+            right: 0;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box3 {
+            background: red;
+            left: 0; top: 0;
+            /* 위계 순서를 변경 */
+            z-index: 3;
+        }
+
+        .box4 {
+            background: blue;
+            left: 30px; top: 30px;
+            /* 위계 순서를 변경 */
+            z-index: 2;
+        }
+
+        .box5 {
+            background: green;
+            left: 60px; top: 60px;
+            /* 위계 순서를 변경 */
+            z-index: 1;
+        }
+
+        header {
+            height: 100px;
+            /* position을 fixed로 하면 display 블록속성이 해제가 됨 따라서 width를 100%로 주어야 함 */
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            background: rgba(255, 255, 255, .6);
+            border-bottom: 1px solid #ddd;
+            left: 0; top: 0;
+            /* 이건 자식을 직접 옮기는 방식 */
+            text-align: center;
+            line-height: 100px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<header>HEADER</header>
+<div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box1 box3"></div>
+    <div class="box1 box4"></div>
+    <div class="box1 box5"></div>
+</div>
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam labore nulla officiis quia sunt. Ab alias amet
+    animi cum dignissimos eius ex facilis, ipsum magni molestias natus non, nostrum perferendis praesentium quo
+    repudiandae saepe, sapiente similique. Ab ad asperiores cumque dolor dolorem doloribus error facilis hic illum
+    molestiae porro, praesentium provident quidem quos voluptates? A accusantium architecto assumenda at consequuntur
+    culpa, cupiditate distinctio dolore dolores earum eligendi eos error exercitationem expedita harum inventore iure
+    laboriosam magni maxime modi molestiae necessitatibus neque nisi, nobis obcaecati odit placeat provident reiciendis
+    repellendus sequi, sint sit tempore unde vel veniam veritatis vitae. Consequuntur culpa cum ducimus ea eligendi est
+    eum eveniet inventore laboriosam laborum laudantium minima molestias natus nemo nulla odit possimus quasi, quibusdam
+    quod ratione reiciendis repudiandae, saepe sapiente soluta tempore totam voluptate. Ad atque cupiditate dolore
+    doloremque eum libero nemo quisquam quos repellat vitae. Amet architecto asperiores autem commodi cumque dolorem ea
+    eius enim facere fuga id illum impedit ipsam ipsum iste, magni minus, modi molestiae necessitatibus nesciunt nisi
+    odit optio pariatur praesentium quam qui quia quidem recusandae repudiandae sit, tempora temporibus velit veritatis
+    vero voluptate voluptatem voluptatibus. Asperiores consequatur ea facere inventore iusto, nulla obcaecati odio
+    repellat sit unde? A amet beatae debitis dicta enim in ipsum iste magni maxime modi nobis praesentium, quas quidem
+    quod ratione, sunt suscipit, tempora veritatis voluptas voluptatem. Aliquam architecto aut corporis deleniti
+    distinctio, dolore explicabo facere fuga fugiat fugit id incidunt laborum laudantium libero nam nisi obcaecati
+    officia omnis porro, ratione tempore temporibus tenetur voluptas! Accusantium, beatae delectus deleniti impedit
+    incidunt ipsa iure, nam necessitatibus obcaecati officia quae recusandae repellat repellendus saepe sint, soluta
+    voluptates! A accusamus autem delectus deleniti dolorem enim facere fugit, harum illum, itaque laudantium nam non
+    odit officiis sint ut vel. Dolore error excepturi facere impedit ipsam maiores molestiae natus, neque nobis quae,
+    quam sunt tenetur velit veritatis voluptatibus. A ab ad amet assumenda aut cumque dolorem, eos et facere ipsum
+    laborum molestias nesciunt odit reprehenderit similique veniam vitae? Aliquam asperiores assumenda commodi deserunt
+    dolor dolore dolores, eius est facilis fuga fugiat illo illum inventore iste iure laudantium magnam maiores, maxime
+    molestias natus nemo nobis non odio officia pariatur possimus quas quasi quia quidem quo reprehenderit sapiente sed
+    similique sit suscipit temporibus voluptates. Ab atque aut consequatur dolor eligendi, inventore rem repellendus
+    reprehenderit velit voluptas? Ab aliquam aliquid animi assumenda autem consequatur dolorum esse, est et ex explicabo
+    facere, illum iste labore laudantium maxime non numquam obcaecati odio perferendis quasi qui, quod sapiente vero
+    voluptas voluptates voluptatum. Alias animi assumenda aut culpa delectus eveniet expedita ratione repudiandae sint
+    soluta? Accusantium aliquam architecto atque corporis culpa dignissimos dolore doloremque ducimus ea eaque ex harum,
+    iure iusto laborum, libero magni, molestias officia perspiciatis repellendus rerum suscipit tempore vero. Blanditiis
+    cumque debitis facilis laboriosam officia quos reiciendis sed sequi vero voluptas. Aliquid aperiam asperiores atque,
+    blanditiis corporis cum debitis doloribus earum esse est facilis id ipsum labore laboriosam laborum maiores minima
+    mollitia, neque nesciunt nisi nostrum officia pariatur perferendis porro provident quas qui quia quis recusandae rem
+    repellat sequi sint suscipit temporibus velit, vero voluptatibus. Consequatur deserunt dignissimos et maxime nam
+    quia voluptatem! A alias assumenda beatae blanditiis consectetur consequuntur cupiditate deserunt distinctio dolor
+    dolores dolorum ea eos eum fugit hic laboriosam, laborum maxime nam natus nobis non officiis omnis optio
+    perspiciatis quae quaerat quibusdam quidem quisquam quo quod ratione rem repudiandae sed suscipit velit veritatis
+    voluptatibus. A ad adipisci aliquam assumenda corporis cupiditate deleniti dolores earum est fuga fugiat harum, illo
+    maxime molestiae nemo perspiciatis provident quas quisquam suscipit ullam ut velit voluptatum. Aut doloribus,
+    dolorum eius error eveniet facilis fugit id iusto labore obcaecati, perspiciatis quam quis repellat repudiandae
+    ullam ut, voluptatem. Alias animi, assumenda at, cum debitis delectus deserunt dolorum et facere in ipsa labore
+    laudantium libero molestias nemo, nostrum odio optio provident quaerat quo repudiandae tenetur veniam voluptas
+    voluptatem voluptatum! Alias animi aperiam asperiores at atque, aut dolore dolorem fugiat illum in obcaecati
+    officiis optio perspiciatis quae quia reiciendis tempora tempore veritatis, vero, voluptatum. A ab adipisci amet
+    aspernatur aut blanditiis corporis delectus dolor dolores ea eaque eligendi esse facere fuga fugiat fugit incidunt
+    ipsa ipsam itaque maiores minima minus nulla odio odit quasi ratione repellat, saepe sapiente similique totam ullam
+    veritatis vitae voluptatibus! Aliquid asperiores deserunt explicabo ipsam laboriosam magni modi reiciendis soluta.
+    Ad beatae dicta earum explicabo incidunt libero magnam maxime recusandae vitae voluptatibus! Ab dolor excepturi
+    laborum maiores maxime minus optio praesentium quidem saepe vel? Earum impedit quia tempora ullam. Ab aliquid
+    aspernatur assumenda atque corporis culpa cupiditate deserunt eius eos esse eveniet ex, laudantium officiis possimus
+    quasi quidem sapiente sed, vero. Cupiditate illo praesentium quibusdam quis. Ab aliquid consequatur corporis cumque
+    deserunt dolor dolore, doloribus eius et hic inventore iure neque non omnis possimus quam quis recusandae repellat
+    similique sit? Accusamus animi hic impedit laboriosam maiores natus non, obcaecati perferendis quibusdam quisquam
+    quos sed similique temporibus totam voluptatem? A ab culpa deleniti earum libero minima, neque porro quaerat soluta
+    veritatis. Ad aperiam at, delectus dolores est odit perferendis provident quidem quo repellendus saepe sit?
+    Assumenda cumque distinctio dolore expedita minus nam omnis, tempore totam veniam voluptatem? Architecto, eaque eius
+    hic ipsa magni officia quae repellat tempora? Commodi ducimus facere iste neque nihil! Adipisci aperiam assumenda at
+    aut consequatur corporis cum doloremque eaque eius eligendi error et exercitationem explicabo fugiat fugit ipsa
+    itaque iure, magnam magni maiores obcaecati officiis porro provident quidem quis, repellendus, sint tempore
+    temporibus ut voluptatem? Aliquid amet animi architecto atque aut cum cupiditate debitis distinctio doloremque
+    dolorum eius eos eveniet excepturi facere facilis fuga fugit hic maiores molestiae necessitatibus, neque, nostrum
+    odit optio, perspiciatis quae quasi ratione sit tempore voluptate voluptatem! Accusantium, aliquam aliquid,
+    architecto aspernatur autem consequatur, corporis cumque dignissimos distinctio doloribus ex exercitationem fuga hic
+    incidunt laborum magnam modi odio ratione sapiente sed similique tempora voluptate voluptatum! Alias animi, aperiam
+    consequuntur, deleniti deserunt dicta ea est facere fuga fugit maxime nemo neque officiis qui soluta veritatis
+    voluptate? Beatae ex, explicabo fugit inventore minus provident veniam? Commodi dolorem eaque ipsam ullam
+    vitae!</h1>
+</body>
+</html>
+
+<!-- 상대적으로 특정 위치에 고정된 것이 position fixed라고 함 -->
+<script>
+    /**
+     * position의 요소
+     * 0. static: 기본값, 계속 위에서부터 쌓인다.
+     * 1. fixed: 위치 고정 (상대적인 위치)
+     * 2. absolute: 절대적인 위치에 고정
+     * 3. relative: 울타리
+     */
+</script>
