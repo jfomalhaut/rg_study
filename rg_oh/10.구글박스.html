@@ -1,9 +1,52 @@
 <html>
 <head>
+    <meta charset="UTF-8">
     <style>
+        * {
+            /* 모든 태그의 속성을 초기화 */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            background: #333333;
+        }
+
+        ul {
+            height: 100px;
+        }
+
+        li {
+            background: darkgrey;
+            float: right;
+            width: 100px;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 20px;
+            padding: 10px;
+        }
+
+
+        .google {
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 50px;
+            height: 200px;
+            padding-top: 100px;
+        }
+
+        .search-bar {
+            background: #f0f0f0;
+            width: 500px;
+            margin: 0px auto 30px auto;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+
         .container {
-            background: skyblue;
-            width: 800px;
+            width: 500px;
             margin: 0 auto;
             overflow: hidden;
         }
@@ -11,21 +54,43 @@
         .box {
             height: 100px;
             margin-right: 10px;
-            width: calc((100% - 10px * 3) / 3);
-            background: #444;
-            float: left
+            width: calc((100% - 10px * 4) / 5);
+            background: darkgrey;
+            float: left;
+            display: inline-block;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
-        .box1 {
-            margin-right: 0px;
+        .box-last {
+            margin-right: 0;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box box1"></div>
-</div>
+    <header>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+        </ul>
+    </header>
+
+    <div class="google">Google</div>
+    <div class="search-bar">Google 검색 또는 URL 입력</div>
+    <div class="container">
+        <div class="box-wrapper">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box box-last"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box box-last"></div>
+        </div>
+    </div>
 </body>
 </html>
