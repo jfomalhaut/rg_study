@@ -1,0 +1,69 @@
+<html>
+<head>
+	<style>
+		* { margin: 0; padding: 0;}
+		li { list-style: none;}
+		a, a:link, a:visited {
+			color: #000;
+			text-decoration: none;
+		}
+		.container {
+			height: 500px;
+			width: 1000px;
+			margin: 100px auto;
+			background: #f0f0f0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			background: #444;
+			margin: 10px;
+			/* margin: auto; */
+		}
+
+		.link {
+			font-size: 40px;
+			color: red;
+		}
+		.link a {
+			color: red;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			width: 800px;
+			background: gray;
+		}
+		li {
+			flex-grow: 1;
+			color: white;
+			text-align: center;
+		}
+		li:nth-child(2) {
+			flex-grow: 2;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	<div class="link">
+		<a href="">NAVER</a>
+	</div>
+	<ul>
+		<li>menu</li>
+		<li>menu</li>
+		<li>menu</li>
+		<li>menu</li>
+		<li>menu</li>
+	</ul>
+</body>
+</html>
