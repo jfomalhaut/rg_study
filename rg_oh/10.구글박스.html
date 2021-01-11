@@ -36,13 +36,13 @@
         }
 
         .search-bar {
-            background: #f0f0f0;
+            /* background: #f0f0f0; */
             width: 500px;
             margin: 0px auto 30px auto;
             height: 40px;
             line-height: 40px;
-            padding-left: 20px;
-            border-radius: 5px;
+            /* padding-left: 20px; */
+            /* border-radius: 5px; */
         }
 
         .container {
@@ -53,17 +53,30 @@
 
         .box {
             height: 100px;
-            margin-right: 10px;
+            margin-left: 10px;
             width: calc((100% - 10px * 4) / 5);
             background: darkgrey;
             float: left;
-            display: inline-block;
+            /* display: inline-block; */
             border-radius: 10px;
             margin-bottom: 10px;
         }
+        .box:nth-child(5n + 1) {
+            margin-left: 0;
+        }
 
         .box-last {
-            margin-right: 0;
+            /* margin-right: 0; */
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border: none;
+            padding: 0 10px;
+            outline: none;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -77,19 +90,56 @@
     </header>
 
     <div class="google">Google</div>
-    <div class="search-bar">Google 검색 또는 URL 입력</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Google 검색 또는 URL 입력">
+    </div>
     <div class="container">
         <div class="box-wrapper">
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
-            <div class="box box-last"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
-            <div class="box box-last"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
         </div>
     </div>
 </body>
