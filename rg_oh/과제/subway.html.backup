@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            /* 모든 태그의 속성을 초기화 */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box
+        }
+
+        .slider {
+            /*height: 400px;*/
+            background: darkgray;
+            position: relative;
+        }
+
+        .slider figure {
+            /* 인라인이기 때문에 높이를 반드시 주어야 함 */
+            height: 400px;
+            background-image: url('images/slider.jpg');
+            /* 바둑판 형식으로 반복되는걸 막음 */
+            background-repeat: no-repeat;
+            /* 가로던 세로던 비율대로 다 들어가게 해줌 */
+            /*background-size: 100%;*/
+            /* 이미지 가운데 정렬이라고 보면 됨 */
+            background-position: center center;
+            /* hover 시간을 줌 */
+            transition: 1s;
+        }
+
+        .floating-links {
+            position: absolute;
+            left: 50%;
+            width: 550px;
+            float: right;
+            bottom: -40px;
+        }
+
+        .links {
+            float: left;
+            width: calc(100% / 2);
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .find-store {
+            border-top-left-radius: 20px;
+            background: #ffce32;
+            position: relative;
+        }
+
+        .find-store:before {
+
+        }
+
+        .apply-franchise {
+            background: #009223;
+            color: white;
+        }
+
+        .apply-franchise-link {
+            position: relative;
+        }
+
+        .apply-franchise-link:before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url('https://subway.co.kr/images/main/icon_franchise.png');
+            background-repeat: no-repeat;
+            /*background-size: 100%;*/
+            background-position: center center;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <!-- 헤더 CSS 임포트 -->
+    <link rel="stylesheet" href="stylesheets/header.css"/>
+    <title>Subway</title>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <!-- figure과 image 차이 -->
+        <figure class="logo">
+            <img src="images/subway.png" alt="subway.png">
+        </figure>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴소개</a></li>
+            <li><a href="#">이용방법</a></li>
+            <li><a href="#">새소식</a></li>
+            <li><a href="#">써브웨이</a></li>
+            <li><a href="#">가맹점</a></li>
+            <li><a href="#">온라인 주문</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="slider">
+        <a href="#" onclick="alert('슬라이더')">
+            <figure></figure>
+        </a>
+        <div class="floating-links">
+            <div class="links find-store">매장찾기</div>
+            <div class="links apply-franchise">
+                <span class="apply-franchise-link">가맹신청ㆍ문의</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="menu"></div>
+    <div class="news"></div>
+    <div class="info"></div>
+</main>
+<footer></footer>
+</body>
+</html>
