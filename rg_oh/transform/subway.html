@@ -18,10 +18,22 @@
             background: #eaeaea;
             height: 800px;
         }
-
-        .menu-item:hover img{
-            width: 120%;
+        .menu-item img {
+            transition: .3s;
         }
+
+        .menu-item:hover strong{
+            transform: scale(1.5);
+        }
+
+        .menu-item:hover p{
+            display: none;
+        }
+        .menu-item:hover img{
+            /* width: 120%; */
+            transform: scale(1.2);
+        }
+
 
     </style>
     <!-- CSS 임포트 -->

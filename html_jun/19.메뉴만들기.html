@@ -1,0 +1,134 @@
+<html>
+<head>
+	<style>
+		* { margin: 0; padding: 0; box-sizing:border-box; list-style: none; }
+		body {
+			background: gray;
+		}
+		header {
+			height: 200px;
+			/* border: 1px solid; */
+			display: flex;
+			background: white;
+		}
+		nav {
+			height: 50px;
+			width: 900px;
+			margin: auto auto 0;
+			/* background: #f9f9f9; */
+		}
+
+		nav > ul {
+			display: flex;
+		}
+		nav > ul > li {
+			width: 100%;
+			position: relative;
+			text-align: center;
+		}
+		span {
+			line-height: 50px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		li ul {
+			/* background: yellowgreen;
+			background: #fff; */
+			/* display: none; */
+			z-index: 2000;
+			width: 100%;
+			height: 0;
+			transition: .3s;
+			overflow: hidden;
+			/* height: 300px; */
+			position: absolute;
+		}
+		nav:hover > ul ul {
+			height: 300px;
+		}
+		nav:hover + article {
+			height: 300px;
+		}
+
+		/* nav > ul > li:hover ul {
+			display: block;
+		} */
+
+		li li {
+			line-height: 50px;
+		}
+
+		article {
+			height: 0;
+			transition: height .3s;
+			position: absolute;
+			left: 0;
+			top: 200px;
+			width: 100%;
+			z-index: 1000;
+			background: yellowgreen;
+			background: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<span>Main1</span>
+					<ul>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+					</ul>
+				</li>
+				<li>
+					<span>Main1</span>
+					<ul>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+					</ul>
+				</li>
+				<li>
+					<span>Main1</span>
+					<ul>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+					</ul>
+				</li>
+				<li>
+					<span>Main1</span>
+					<ul>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+					</ul>
+				</li>
+				<li>
+					<span>Main1</span>
+					<ul>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+						<li>sub</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<article></article>
+	</header>
+</body>
+</html>
