@@ -1,0 +1,41 @@
+.header-top {
+    position: relative;
+    border-top: 5px solid #009223;
+    margin: 0 auto;
+    /* 질문 1: 부모에서 padding-top vs 자식에서 margin-top 중 어떤게 나을지? */
+    padding-top: 30px;
+}
+
+figure.logo {
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+/* 질문2: class 주는것 vs selector로 선택하는것 어떻게 판단하는지? */
+.header-list {
+    width: 1000px;
+    height: 61px;
+    margin: 0 auto;
+}
+
+.header-item {
+    float: left;
+    width: calc(100% / 6);
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 링크 파란색 변경 제거 */
+.header-item > a, .header-item > a:link, .header-item > a:visited {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-item > a:hover {
+    font-weight: bolder;
+    color: #009223;
+}

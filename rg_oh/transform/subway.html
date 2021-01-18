@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS를 분리했을 때 초기화 작업은 어디에다 넣으면 좋을까? -->
+    <style>
+        * {
+            /* 모든 태그의 속성을 초기화 */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box
+        }
+
+        .news {
+            margin: 0 auto;
+            width: 1400px;
+            background: #eaeaea;
+            height: 800px;
+        }
+
+        .menu-item:hover img{
+            width: 120%;
+        }
+
+    </style>
+    <!-- CSS 임포트 -->
+    <link rel="stylesheet" href="stylesheets/header.css"/>
+    <link rel="stylesheet" href="stylesheets/main.css"/>
+    <title>Subway</title>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <!-- figure과 image 차이 -->
+        <figure class="logo">
+            <img src="images/subway.png" alt="subway.png">
+        </figure>
+    </div>
+    <nav>
+        <ul class="header-list">
+            <li class="header-item"><a href="#">메뉴소개</a></li>
+            <li class="header-item"><a href="#">이용방법</a></li>
+            <li class="header-item"><a href="#">새소식</a></li>
+            <li class="header-item"><a href="#">써브웨이</a></li>
+            <li class="header-item"><a href="#">가맹점</a></li>
+            <li class="header-item"><a href="#">온라인 주문</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="slider">
+        <a href="#" onclick="alert('슬라이더')">
+            <figure></figure>
+        </a>
+
+        <div class="floating-links">
+            <a href="#" onclick="alert('매장찾기')">
+                <div class="slider-links find-store">
+                    <span>매장찾기</span>
+                </div>
+            </a>
+            <a href="#" onclick="alert('가맹신청')">
+                <div class="slider-links apply-franchise">
+                    <img src="https://www.subway.co.kr/images/main/icon_franchise.png">
+                    가맹신청ㆍ문의
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-header">
+            <div class="menu-header-title">Subway's Menu</div>
+            <ul class="menu-types">
+                <li class="menu-type">클래식</li>
+                <li class="menu-type">프레쉬&라이트</li>
+                <li class="menu-type">프리미엄</li>
+                <li class="menu-type">아침메뉴</li>
+            </ul>
+        </div>
+        <div class="menu-items">
+            <!-- 질문 / 각 row로 image, description을 나누는 것이 나았을지? -->
+            <div class="menu-item">
+                <img src="https://www.subway.co.kr/images/menu/sandwich_cl06.jpg"/>
+                <div class="menu-item-description">
+                    <strong>에그마요1</strong>
+                    <p class="menu-item-description-paragraph">
+                        친환경 인증 받은 농장에서 생산된 달걀과<br>
+                        고소한 마요네즈가 만나 더 부드러운<br>
+                        스테디셀러
+                    </p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.subway.co.kr/images/menu/sandwich_cl06.jpg"/>
+                <div class="menu-item-description">
+                    <strong>에그마요2</strong>
+                    <p class="menu-item-description-paragraph">
+                        친환경 인증 받은 농장에서 생산된 달걀과<br>
+                        고소한 마요네즈가 만나 더 부드러운<br>
+                        스테디셀러
+                    </p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.subway.co.kr/images/menu/sandwich_cl06.jpg"/>
+                <div class="menu-item-description">
+                    <strong>에그마요3</strong>
+                    <p class="menu-item-description-paragraph">
+                        친환경 인증 받은 농장에서 생산된 달걀과<br>
+                        고소한 마요네즈가 만나 더 부드러운<br>
+                        스테디셀러
+                    </p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.subway.co.kr/images/menu/sandwich_cl06.jpg"/>
+                <div class="menu-item-description">
+                    <strong>에그마요4</strong>
+                    <p class="menu-item-description-paragraph">
+                        친환경 인증 받은 농장에서 생산된 달걀과<br>
+                        고소한 마요네즈가 만나 더 부드러운<br>
+                        스테디셀러
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="news-advertise"></div>
+        <div class="news-list"></div>
+    </div>
+    <div class="info"></div>
+</main>
+<footer></footer>
+</body>
+</html>
