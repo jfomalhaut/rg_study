@@ -39,6 +39,25 @@
     border-top-left-radius: 20px;
     background: #ffce32;
 }
+.find-store span {
+    display: inline-block;
+    padding-left: 50px;
+    position: relative;
+}
+
+.find-store span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('https://www.subway.co.kr/images/main/icon_map.png');
+    background-size: 30px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
 
 .apply-franchise {
     border-bottom-right-radius: 20px;
