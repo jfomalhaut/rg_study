@@ -1,0 +1,43 @@
+<html>
+<head>
+	<style>
+		.square {
+			width: 100px;
+			height: 100px;
+			margin: 200px auto;
+			position: relative;
+			transition: .7s;
+			transition-timing-function: ease-in-out;
+		}
+		.square:before, .square:after {
+			content: '';
+			position: absolute;
+			background: red;
+		}
+
+		.square:before {
+			width: 2px;
+			height: 100%;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.square:after {
+			height: 2px;
+			width: 100%;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+
+		.square:hover {
+			transform: rotate(360deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="square"></div>
+</body>
+</html>

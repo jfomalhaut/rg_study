@@ -1,10 +1,32 @@
 <html>
 <head>
 	<style>
-		
+		div {
+			padding: 10px 20px;
+			font-size: 30px;
+			font-weight: bold;
+			display: inline-block;
+			position: relative;
+			user-select: none;
+			cursor: pointer;
+		}
+		div:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 0%;
+			height: 2px;
+			background: red;
+			transition: .3s;
+		}
+		div:hover:after {
+			width: 100%;
+			left: 0%;
+		}
 	</style>
 </head>
 <body>
-	
+	<div>안녕하세요</div>
 </body>
 </html>
