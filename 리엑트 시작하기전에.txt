@@ -1,0 +1,43 @@
+
+
+1. Webpack
+=> 압축기
+=> 왜? => 가상 돔, index 하나밖에 => 처음 켰을 때 한 번에 렌더링 => bundle.js
+=> 처음에 느리다 => 최소화하는 역할
+=> 서버역할, live server
+=> webpack: "압축을 할건데, 내가 어떻게 압축을 해주면 돼?"
+=> 세팅을 해주며, 나는 이 파일을 쓸거다, 나는 여기서부터 시작할거다, 나는 이 파일로 어떤 위치에 압축파일을 만들 것이다.
+=> 눈과 귀가 없다.
+
+2. Babel
+=> 번역기
+=> 최신 문법을 구문법으로 바꿔주는 역할
+=> import => require('http') import http from 'http'
+
+3. React
+=> 라이브러리
+=> 앞으로 공부할 내용
+
+
+[시작할 때]
+
+1. package.json 만들기 
+$ npm init -y
+
+2. webpack설정하기.
+
+3. webpack 설정에 따라서 폴더트리 구성하기
+
+4. babel 설정 => package.json 첨가
+
+
+설치해야 하는 것들
+
+[Webpack]
+$ npm i -D webpack webpack-cli webpack-dev-server
+
+[Babel]
+$ npm i -D babel-loader @babel/preset-env @babel/preset-react @babel/core
+
+[React]
+$ npm i -s react react-dom react-router-dom
