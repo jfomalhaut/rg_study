@@ -3,9 +3,14 @@
 // 어디에 아웃풋 할건가.(어떤 이름으로)
 // 서버는 어떻게 사용할 것인가?
 
+const Dotenv = require('dotenv-webpack');
+
 module.exports = {
 	entry: [
 		'./src/index.js'
+	],
+	plugins: [
+		new Dotenv()
 	],
 	module: {
 		rules: [
