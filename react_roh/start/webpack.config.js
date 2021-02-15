@@ -4,12 +4,15 @@
 // 4. 서버는 어떻게 사용할 것인가?
 
 
-// 웹팩 상황이 바뀌어야 될 상황이 언제?
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     // 1번에 대한
     entry: [
         './src/index.js'
+    ],
+    plugins: [
+        new Dotenv()
     ],
     // 2번에 대한 답
     module: {
