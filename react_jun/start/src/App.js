@@ -4,6 +4,7 @@ import Home from './routers/Home';
 import List from './routers/List';
 import Input from './routers/Input';
 import Phonebook from './routers/Phonebook';
+import Product from './routers/Product';
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 				<Route path="/list" component={List} />
 				<Route path="/input" component={Input} />
 				<Route path="/phonebook" component={Phonebook} />
+				<Route path="/product/:type" component={Product} />
 
 			</Switch>
 		</Router>

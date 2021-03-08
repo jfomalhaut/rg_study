@@ -1,0 +1,17 @@
+[react]
+1_ react
+2_ react-dom
+3_ react-router-dom
+
+[webpack]
+1_ webpack
+2_ webpack-cli
+3_ webpack-dev-server
+
+[TypeScript]
+1_ @types/react
+2_ @types/react-dom
+4_ @types/webpack
+5_ html-webpack-plugin
+6_ ts-loader
+7_ typescript
